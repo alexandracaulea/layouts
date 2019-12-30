@@ -1,0 +1,139 @@
+:root {
+  --orange-color: #fe9801;
+  --white-color: #fff;
+  --dark-grey: #200f21;
+  --light-grey: #f7f7f7;
+  --light-orange: #deb881;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  color: var(--dark-grey);
+  background: var(--light-orange);
+}
+
+.product {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__name {
+  margin-top: 30px;
+}
+
+.product__image {
+  position: relative;
+}
+
+.product__info {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+}
+
+.product__details {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.product__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  z-index: -1;
+}
+
+.product__tag {
+  background: var(--orange-color);
+  color: var(--white-color);
+  font-size: 1.5em;
+  padding: 13px 5px;
+  border-radius: 50%;
+}
+
+.product__name {
+  font-size: 0.8em;
+}
+
+.product__name span:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.product__price {
+  font-size: 8vw;
+  line-height: 10px;
+}
+
+.product__details {
+  color: var(--light-grey);
+  font-size: 0.85em;
+}
+
+.product__details span:nth-child(1) {
+  color: var(--orange-color);
+}
+
+.product__details strong:nth-child(2) {
+  text-transform: uppercase;
+}
+
+@supports (display: grid) {
+  @media (min-width: 600px) {
+    .product__image,
+    .product__info,
+    .product__details,
+    .logo {
+      position: static;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 2fr 200px 2fr;
+      align-items: center;
+    }
+
+    .product__image {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+
+    .product__name {
+      margin-top: 10px;
+    }
+
+    .product__info {
+      grid-column: 10 / 12;
+      grid-row: 2;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .product__details {
+      grid-row: 3;
+      grid-column: 2 / 6;
+    }
+
+    .logo {
+      grid-row: 3;
+      grid-column: 11;
+    }
+  }
+}
