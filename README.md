@@ -5,4 +5,4 @@
 3. [3rd example](https://codepen.io/alexandracaulea/full/ZEYoGmz)
 4. [4th example](https://codepen.io/alexandracaulea/full/ZEYoaPe)
 5. [5th example](https://codepen.io/alexandracaulea/full/abzGrjz)
-6. [6th example]()
+6. [6th example](https://codepen.io/alexandracaulea/full/wvBxGYr)

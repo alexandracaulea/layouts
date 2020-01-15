@@ -1,0 +1,100 @@
+:root {
+  --light-white: #eaeaea;
+  --text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  --dark-brown: #d89348;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  color: var(--light-white);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--dark-brown);
+  border-style: none;
+}
+
+main {
+  display: block;
+}
+
+.restaurant__product {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 5fr auto auto 3fr;
+  height: 85vh;
+
+  @media (min-width: 48em) {
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh 15vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  p:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    font-size: 0.75em;
+    text-shadow: var(--text-shadow);
+  }
+
+  > :not(img) {
+    margin-left: 1rem;
+  }
+}
+
+.restaurant__product-image {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.restaurant__product-heading {
+  grid-column: 1;
+  grid-row: 3;
+  margin: 0;
+  color: var(--light-white);
+  text-shadow: var(--text-shadow);
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.restaurant__product-price {
+  grid-column: 1;
+  grid-row: 4;
+  width: 15vw;
+  display: inline-block;
+  padding: 0.1em;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 5vw;
+  color: #fff;
+  background: #ffcc00;
+  box-shadow: 5px 5px #ff254f;
+}
+
+.restaurant__product-subheading {
+  grid-column: 1;
+  grid-row: 5;
+  align-self: end;
+  color: var(--light-white);
+  padding: 0.2em;
+  font-size: 8vmin;
+  line-height: 1.1;
+  text-shadow: var(--text-shadow);
+}
