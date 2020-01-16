@@ -1,0 +1,127 @@
+:root {
+  --white-color: #fff;
+  --light-white: #f9f9f9;
+  --light-purple: #f67280;
+  --dark-color: hsla(0, 4%, 13%, 0.9);
+  --light--blue: hsla(180, 50%, 82%, 0.9);
+  --light-color: hsla(360, 0%, 100%, 0.9);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: block;
+}
+
+.layout {
+  height: 100vh;
+  padding: 20vh 0;
+  background-color: var(--light-purple);
+  background: url("../img/copenhagen.jpg") no-repeat;
+  background-size: cover;
+  border: 2px solid var(--light-white);
+
+  > * {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 10vh;
+    padding: 1rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  h1 {
+    color: var(--white-color);
+    background: var(--dark-color);
+    line-height: 1.1;
+    align-items: flex-end;
+  }
+
+  p:nth-of-type(1),
+  p:nth-of-type(3) {
+    background: var(--light--blue);
+    align-items: center;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  p:nth-of-type(2) {
+    align-items: flex-start;
+    background: var(--light-color);
+    align-items: center;
+  }
+
+  p:nth-of-type(4) {
+    background: var(--dark-color);
+    color: var(--light-white);
+    align-items: center;
+  }
+}
+
+@supports (display: grid) {
+  .layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0;
+
+    > * {
+      margin: 0;
+    }
+
+    h1 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    p:nth-of-type(1) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    p:nth-of-type(2) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    p:nth-of-type(3) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    p:nth-of-type(4) {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    @media (min-width: 768px) {
+      width: 90vw;
+      height: 90vh;
+      margin: 5vh auto;
+      padding: 0;
+
+      > * {
+        max-width: auto;
+        margin: 0;
+      }
+    }
+  }
+}
