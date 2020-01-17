@@ -7,4 +7,4 @@
 5. [5th example](https://codepen.io/alexandracaulea/full/abzGrjz)
 6. [6th example](https://codepen.io/alexandracaulea/full/wvBxGYr)
 7. [7th example](https://codepen.io/alexandracaulea/full/JjoBwZL)
-8. [8th example]()
+8. [8th example](https://codepen.io/alexandracaulea/full/JjoavbN)
