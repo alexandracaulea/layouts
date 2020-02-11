@@ -22,7 +22,7 @@ body {
   background-color: var(--darkgreen);
 }
 
-img {
+.product__image {
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;

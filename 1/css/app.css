@@ -2,6 +2,17 @@
   --orange-color: #fe9801;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -24,6 +35,7 @@ body {
 
 .product__image {
   position: relative;
+  border-style: none;
 }
 
 .product__info {
@@ -64,6 +76,7 @@ body {
   font-size: 1.5em;
   padding: 13px 5px;
   border-radius: 50%;
+  font-weight: bolder;
 }
 
 .product__name {
