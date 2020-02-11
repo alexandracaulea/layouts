@@ -1,17 +1,15 @@
 :root {
   --orange-color: #fe9801;
-  --white-color: #fff;
-  --dark-grey: #200f21;
-  --light-grey: #f7f7f7;
-  --light-orange: #deb881;
 }
 
 body {
   margin: 0;
   height: 100vh;
   font-family: "Rubik", sans-serif;
+  --light-orange: #deb881;
+  --dark-grey: #200f21;
   color: var(--dark-grey);
-  background: var(--light-orange);
+  background-color: var(--light-orange);
 }
 
 .product {
@@ -60,7 +58,8 @@ body {
 }
 
 .product__tag {
-  background: var(--orange-color);
+  background-color: var(--orange-color);
+  --white-color: #fff;
   color: var(--white-color);
   font-size: 1.5em;
   padding: 13px 5px;
@@ -81,6 +80,7 @@ body {
 }
 
 .product__details {
+  --light-grey: #f7f7f7;
   color: var(--light-grey);
   font-size: 0.85em;
 }
