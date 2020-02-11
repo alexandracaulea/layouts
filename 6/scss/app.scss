@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 ::-moz-selection {
   background: var(--dark-blue);
   color: var(--white-color);
@@ -63,9 +68,9 @@ body {
 img {
   width: 100%;
   height: 90vmin;
-  -o-object-fit: cover;
   object-fit: cover;
   display: block;
+  border-style: none;
 }
 
 span {
@@ -119,9 +124,7 @@ span {
 .restaurant--first-article-aside {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 2fr;
   grid-template-columns: 1fr 3fr 2fr;
-  -ms-grid-rows: 0.7fr 60px 20px 100px 0.4fr;
   grid-template-rows: 0.7fr 60px 20px 100px 0.4fr;
   justify-items: start;
 }
@@ -152,9 +155,7 @@ span {
     .restaurant {
       max-width: initial;
       margin: initial;
-      display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
       grid-template-columns: repeat(10, 1fr);
       grid-gap: 10px;
 
