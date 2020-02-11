@@ -1,10 +1,6 @@
 :root {
-  --white-color: #fff;
   --light-white: #f9f9f9;
-  --light-purple: #f67280;
   --dark-color: hsla(0, 4%, 13%, 0.9);
-  --light--blue: hsla(180, 50%, 82%, 0.9);
-  --light-color: hsla(360, 0%, 100%, 0.9);
 }
 
 *,
@@ -16,9 +12,7 @@
 
 html {
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
 }
 
 body {
@@ -33,6 +27,7 @@ main {
 .layout {
   height: 100vh;
   padding: 20vh 0;
+  --light-purple: #f67280;
   background-color: var(--light-purple);
   background: url("../img/copenhagen.jpg") no-repeat;
   background-size: cover;
@@ -54,6 +49,7 @@ main {
 }
 
 .layout h1 {
+  --white-color: #fff;
   color: var(--white-color);
   background: var(--dark-color);
   line-height: 1.1;
@@ -64,6 +60,7 @@ main {
 
 .layout p:nth-of-type(1),
 .layout p:nth-of-type(3) {
+  --light--blue: hsla(180, 50%, 82%, 0.9);
   background: var(--light--blue);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -77,6 +74,7 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  --light-color: hsla(360, 0%, 100%, 0.9);
   background: var(--light-color);
   -webkit-box-align: center;
       -ms-flex-align: center;
