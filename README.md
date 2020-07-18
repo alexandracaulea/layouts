@@ -13,3 +13,5 @@ When I've first started coding I decided to learn more about CSS Grid and how to
 | 7.  | Layout 7     | [Demo](https://codepen.io/alexandracaulea/full/JjoBwZL) | [Check the code](https://github.com/alexandracaulea/layouts/tree/master/7) |
 | 8.  | Layout 8     | [Demo](https://codepen.io/alexandracaulea/full/JjoavbN) | [Check the code](https://github.com/alexandracaulea/layouts/tree/master/8) |
 | 9.  | Layout 9     | [Demo](https://codepen.io/alexandracaulea/full/Exaddav) | [Check the code](https://github.com/alexandracaulea/layouts/tree/master/9) |
+
+![CSS Grid Layouts](layouts-gif.gif)
